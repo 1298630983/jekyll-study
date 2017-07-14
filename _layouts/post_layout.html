@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+	{% include head.html %}
+	<body>
+		{% include blog_header.html %}
+		<main class="blogmain">
+			<header>
+				<h1 class="article-title">{{ page.title }}</h1>
+				<p class="article-time">
+					{{ page.time }}, 发表于<span>{{ page.location }}</span>
+				</p>
+				<p class="article-hint">
+					如果你对本文有任何建议或疑问，可以在这里给我提
+					<a target="_blank" href="https://github.com/1298630983/1298630983.github.io/issues">Issues</a>,谢谢！:)
+				</p>
+			</header>
+			{{ content }}
+		    
+		</main>
+			{% include footer.html %}
+	</body>
+
+</html>

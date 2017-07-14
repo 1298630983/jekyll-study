@@ -1,0 +1,150 @@
+
+/** header **/
+.bloghead{
+	position: relative;
+	max-width: 650px;
+	height: 90%;
+	margin: 30px auto;
+}
+
+.bloghead img, .authorhead img{
+	height: 85px;
+	padding: 10px;
+	vertical-align: top;
+	margin-right: 10px;
+}
+
+.blogtitle{
+	color: #000;
+	margin-top: 0;
+	margin-bottom: 1rem;
+	font-family: courier;
+	display: inline-block;
+}
+
+.blogtitle h1{
+	margin-top: 10px;
+}
+
+nav{
+	border-bottom: 1px solid #ecf0f1;
+	border-top: 1px solid #ecf0f1;
+	margin-bottom: 2em;
+	text-align: center;
+	max-width: 650px;
+}
+
+nav ul{
+	list-style: none;
+	overflow: hidden;
+	margin: 0 auto;
+	padding: 0;
+	width: 100%;
+	text-align: center;
+}
+
+nav ul li{
+	display: inline-block;
+	font-family: "Open Sans Condensed","Open Sans","Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
+	font-size: 15px;
+	font-weight:300;
+	margin: 0;
+	padding: 0 .5em;
+	text-align: center;
+}
+
+nav ul li a{
+	display: block;
+	padding: .5em 0;
+	color: 3498db;
+}
+
+nav.menu{
+	margin-bottom: 2.5em;
+}
+
+nav.menu li{
+	margin: 0 .5em;
+	padding: 0;
+}
+
+
+/** Main body **/
+.blogmain{
+	max-width: 650px;
+	width: 90%;
+	margin: 20px auto;
+	font-family: "Roboto Slab", "Merriweather", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
+	font-size: 15px;
+	line-height: 1.8em;
+	
+}
+
+article.preview{
+	margin-bottom: 4em; 
+}
+
+.post-section{
+	font-size: 15px;
+}
+
+.post-time{
+	color: #95a5a6;
+	font-family: "Open Sans Condensed","Open Sans","Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
+	font-size: 15px;
+	margin-bottom: 1em;
+}
+
+p.readmore{
+	color: #337ab7;
+	margin-top: 1em;
+	text-align: right;
+}
+
+/** 文章全文 **/
+blockquote{
+	font-size: 13px;
+}
+
+.article-title{
+	text-align: center;
+}
+
+.article-time{
+	text-align: center;
+	font-weight: 300;
+	font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
+	font-size: 13px;
+}
+
+.article-hint{
+	text-align: center;
+	font-weight: 300;
+	font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
+	font-size: 13px;
+	margin-bottom: 20px;
+	border-bottom-width: 1px;
+	border-bottom-style: inset;
+}
+
+.smenu{
+	font-size: 15px;
+	text-align: left;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.footer-copyright {
+    padding: 30px 0;
+    text-align: center;
+    color: #000;
+	font-weight: 500;
+    font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L",sans-serif;
+    margin-top: 60px;
+}
+
+
+
+
+
+

@@ -1,0 +1,155 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+	<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>Git入门</title>
+  <meta name="description" content="Git是一款免费，开源的分布式控制系统，用于敏捷高效地处理任何或小或大的项目。Git是一个开源的分布式版本控制系统，可以有效，高速的处理从很小到非常大的项目版本管理。">
+  <link rel="canonical" href="http://localhost:4000/2017/07/08/Git.html">
+  
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/assets/css/blog.css">
+  <link rel="stylesheet" href="/assets/css/syntax.css">
+  
+    <!-- Google fonts -->
+  <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans:300' type='text/css'>
+  <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Source+Sans+Pro' type='text/css'>
+  
+</head>
+
+
+
+
+
+
+
+	<body>
+		<header class="bloghead">
+
+  <div class="authorheader">
+	<a href="/"><img alt="my avatar" src="/assets/img/avatar.jpg" /></a>
+	<div class="blogtitle">
+		<h1><a href="/">Jason</a></h1>
+		<h5>Life is a struggle!</h5>
+	</div>
+  </div>
+  
+  <nav class="menu" role="nav">
+	<ul>
+	  <li><a href="/">Home</a></li>
+	  <li>|</li>
+	  <li><a href="/menu.html">Menu</a></li>
+	  <li>|</li>
+	  <li><a target="_blank" href="https://github.com/1298630983">Github</a></li>
+	  <li>|</li>
+	  <li><a href="/about.html">About me</a></li>
+	</ul>
+  </nav>
+
+</header>
+		<main class="blogmain">
+			<header>
+				<h1 class="article-title">Git入门</h1>
+				<p class="article-time">
+					2017年07月14日 星期五, 发表于<span>广州</span>
+				</p>
+				<p class="article-hint">
+					如果你对本文有任何建议或疑问，可以在这里给我提
+					<a target="_blank" href="https://github.com/1298630983/1298630983.github.io/issues">Issues</a>,谢谢！:)
+				</p>
+			</header>
+			<ul id="markdown-toc">
+  <li><a href="#基本操作" id="markdown-toc-基本操作">基本操作</a></li>
+  <li><a href="#常用操作示例" id="markdown-toc-常用操作示例">常用操作示例</a></li>
+</ul>
+
+<p>Git是一款免费，开源的分布式控制系统，用于敏捷高效地处理任何或小或大的项目。
+Git是一个开源的分布式版本控制系统，可以有效，高速的处理从很小到非常大的项目版本管理。</p>
+
+<h2 id="基本操作">基本操作</h2>
+
+<ol>
+  <li>记录更新（git add）</li>
+  <li>提交更新（git commit）</li>
+  <li>查看文件的状态（git status）</li>
+  <li>移除文件（git rm）</li>
+  <li>推送本地更新到服务器（git push）</li>
+  <li>拉服务器更新到本地（git pull）</li>
+  <li>查看版本历史（git log）</li>
+  <li>撤销未提交的修改（git reset）</li>
+  <li>创建新提交来撤销前期提交的修改（git revert）</li>
+  <li>版本回退（git checkout）</li>
+  <li>分支管理（git branch）</li>
+  <li>储藏修改（git stash）</li>
+  <li>标签（git tag）</li>
+</ol>
+
+<h2 id="常用操作示例">常用操作示例</h2>
+
+<p>将仓库中的改动同步到本地
+在git-bash中进入项目目录下，使用git pull命令</p>
+
+<p>本地有更新，上传到github仓库：</p>
+
+<ol>
+  <li>
+    <p>（先进入项目文件夹）通过命令 git init 把这个目录变成git可以管理的仓库</p>
+
+    <p><code class="highlighter-rouge">git init</code></p>
+  </li>
+  <li>
+    <p>把文件添加到版本库中，使用命令 git add .添加到暂存区里面去，不要忘记后面的小数点“.”，意为添加文件夹下的所有文件</p>
+
+    <p><code class="highlighter-rouge">git add .</code></p>
+  </li>
+  <li>
+    <p>用命令 git commit告诉Git，把文件提交到仓库。引号内为提交说明</p>
+
+    <p><code class="highlighter-rouge">git commit -m 'first commit'</code></p>
+  </li>
+  <li>
+    <p>关联到远程库
+git remote add origin 你的远程库地址
+如：
+git remote add origin <a href="https://github.com/cade8800/ionic-demo.git">github</a></p>
+  </li>
+  <li>
+    <p>获取远程库与本地同步合并（如果远程库不为空必须做这一步，否则后面的提交会失败）</p>
+
+    <p><code class="highlighter-rouge">git pull --rebase origin master</code></p>
+  </li>
+  <li>
+    <p>把本地库的内容推送到远程，使用 git push命令，实际上是把当前分支master推送到远程。执行此命令后会要求输入用户名、密码，验证通过后即开始上传。</p>
+
+    <p><code class="highlighter-rouge">git push -u origin master</code></p>
+  </li>
+  <li>
+    <p>状态查询命令</p>
+
+    <p><code class="highlighter-rouge">git status</code></p>
+  </li>
+</ol>
+
+
+		    
+		</main>
+			<div class="footer-copyright">
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="col-md-12">
+				Copyright &copy 2017 江松 - All rights reserved.
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javastript" src="/assets/js/bootstrap.min.js"></script>
+<script type="text/javastript" src="/assets/js/jquery.min.js"></script>
+	</body>
+
+</html>
